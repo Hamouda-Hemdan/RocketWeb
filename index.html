@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rocket Boss</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="todo">
+      <header class="todo__header">
+        <form class="todo__form" id="taskForm">
+          <h2 class="todo__title">Create Task 🚀</h2>
+          <input
+            type="text"
+            id="taskInput"
+            class="todo__input"
+            placeholder="New task..."
+            required
+            autocomplete="off"
+          />
+          <button type="submit" class="todo__button">Add Task</button>
+        </form>
+      </header>
+
+      <section class="todo__section">
+        <h2 class="todo__subtitle">Active Tasks</h2>
+        <ul class="todo__list" id="activeTasks"></ul>
+      </section>
+
+      <section class="todo__section">
+        <h2 class="todo__subtitle">Completed Tasks</h2>
+        <ul class="todo__list" id="completedTasks"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
